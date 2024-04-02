@@ -1,0 +1,25 @@
+{
+  "name": "ecommerceapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamvermajayant/Ecommerce.API.git"
+  },
+  "keywords": [],
+  "author": "Jayant Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamvermajayant/Ecommerce.API/issues"
+  },
+  "homepage": "https://github.com/iamvermajayant/Ecommerce.API#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.2.4",
+    "nodemon": "^3.1.0"
+  }
+}
