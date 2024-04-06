@@ -46,4 +46,16 @@ router.get('/find/:id', verifyTokenWithAdmin, async (req, res)=> {
 })
 
 
+//GET All the user 
+router.get('/alluser', async (req,res)=> {
+    const query = req.query.new;
+    try {
+        const allUser = query ? await User.find().limit(2).sort({_id : -1}) : await User.find();
+        res.status(200).json(allUser);
+    } catch (error) {
+        res.status(500).json(error);
+    }
+})
+
+
 module.exports = router;
