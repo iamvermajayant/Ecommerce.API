@@ -4,6 +4,8 @@ const colors = require('colors');
 const authRoute = require('./routes/auth');
 const productRoute = require('./routes/product');
 const userRoute = require('./routes/user');
+const cartRoute = require('./routes/cart');
+const orderRoute = require('./routes/order');
 
 
 const app = express();
@@ -20,6 +22,9 @@ app.use(express.json());
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
 app.use('/api/product', productRoute);
+app.use('/api/cart', cartRoute);
+app.use('/api/order', orderRoute);
+
 
 
 const PORT = process.env.PORT || 8000;
