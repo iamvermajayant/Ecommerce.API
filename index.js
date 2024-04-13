@@ -1,8 +1,10 @@
 const express = require('express');
 const connectDB = require('./utils/dbConnect');
 const colors = require('colors');
-const authRoute = require('./routes/auth')
-const userRoute = require('./routes/user')
+const authRoute = require('./routes/auth');
+const productRoute = require('./routes/product');
+const userRoute = require('./routes/user');
+
 
 const app = express();
 
@@ -17,6 +19,7 @@ app.get('/', (req, res) => {
 app.use(express.json());
 app.use('/api/users', userRoute);
 app.use('/api/auth', authRoute);
+app.use('/api/product', productRoute);
 
 
 const PORT = process.env.PORT || 8000;
