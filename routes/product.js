@@ -56,8 +56,7 @@ router.get('/find/:id', async (req, res)=> {
 })
 
 
-
-//GET All the user 
+//GET All the products 
 router.get('/', async (req,res)=> {
     const qnew = req.query.new;
     const qcategory = req.query.categories;
