@@ -6,11 +6,14 @@ const productRoute = require('./routes/product');
 const userRoute = require('./routes/user');
 const cartRoute = require('./routes/cart');
 const orderRoute = require('./routes/order');
+const cors = require('cors');
 
 
 const app = express();
 
 connectDB();
+
+app.use(cors());
 
 
 app.get('/', (req, res) => {
